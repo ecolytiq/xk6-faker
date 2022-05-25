@@ -64,5 +64,5 @@ Then:
 
 2. Build the binary:
   ```bash
-  $ xk6 build --with github.com/szkiba/xk6-faker@latest
+  $ xk6 build --with github.com/ecolytiq-team/xk6-faker@latest
   ```
