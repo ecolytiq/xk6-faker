@@ -61,9 +61,7 @@ func (f *Fake) Exports() modules.Exports {
 	return modules.Exports{
 		Default: f,
 		Named: map[string]interface{}{
-			"Faker":         f.constructor,
-			"FakerInstance": func(seed int64) *Faker { return newFaker(f.vu, seed) },
-			"FakerModule":   New().NewModuleInstance,
+			"Faker": f.constructor,
 		},
 	}
 }
